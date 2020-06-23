@@ -81,7 +81,7 @@ function extractTimestamp(line) {
     let result = line.match(/<[^>]+><[^>]+>Updated: ([^<]+)<[^>]+>([^<]+)<[^>]+><[^>]+>/);
 
     if (result !== null) {
-        result = result[1] + result[2];
+        result = result[1] + ' ' + result[2];
     }
 
     return result;
